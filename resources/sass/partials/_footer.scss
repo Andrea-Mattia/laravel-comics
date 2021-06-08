@@ -1,0 +1,46 @@
+footer {
+    background: $bg-footer;
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        .sign-up {
+            padding: 1rem;
+            color: $title-color;
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: transparent;
+            border-color: $secondary-color;
+            cursor: pointer;
+            transition: transform 0.2s;
+            &:hover {
+                transform: scale(1.12);
+            }
+        }
+        .socials {
+            display: flex;
+            align-items: center;
+            .ft-follow {
+                color: $secondary-color;
+                margin-right: 1rem;
+            }
+            .footer-nav {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                }
+                a {
+                    display: inline-block;
+                    margin-left: 1.5rem;
+                    text-decoration: none;
+                    transition: transform 0.2s;
+                    &:hover {
+                        transform: scale(1.12);
+                    }
+                }
+            }
+        }
+    }
+}

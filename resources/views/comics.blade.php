@@ -13,5 +13,6 @@
                 <button class="btn ttu">load more</button>
             </div>
         </div>
+        <div class="separator"></div>
     </section>
 @endsection

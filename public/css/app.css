@@ -5,6 +5,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Nunito", sans-serif;
   color: #000;
 }
@@ -12,6 +15,13 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  background: #1c1c1c;
 }
 
 .container {
@@ -24,19 +34,19 @@ img {
   text-transform: uppercase;
 }
 
-header {
+div.container {
   display: flex;
   align-items: center;
 }
-header .brand-logo {
+div.container .brand-logo {
   width: 100px;
 }
-header .main-navigation ul {
+div.container .main-navigation ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
-header .main-navigation a {
+div.container .main-navigation a {
   display: inline-block;
   margin-left: 4rem;
   padding: 3rem 0;
@@ -45,15 +55,19 @@ header .main-navigation a {
   color: #000;
   border-bottom: 4px solid transparent;
 }
-header .main-navigation a.active {
+div.container .main-navigation a.active {
   color: #097ceb;
   border-color: #097ceb;
 }
 
 .main-content {
-  background: #1c1c1c;
+  margin-top: 3rem;
   color: #fff;
-  padding-top: 2rem;
+}
+.main-content .separator {
+  height: 25px;
+  width: 100vw;
+  background: #0082f9;
 }
 .main-content .comics {
   display: flex;
@@ -63,6 +77,11 @@ header .main-navigation a.active {
 .main-content .comics .comic {
   flex-basis: calc(100% / 6 - 2rem);
   margin: 2rem 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.main-content .comics .comic:hover {
+  transform: scale(1.12);
 }
 .main-content .comics .comic .img-title {
   margin-top: 1rem;
@@ -79,5 +98,50 @@ header .main-navigation a.active {
   transition: transform 0.2s;
 }
 .main-content .comics .btn:hover, .main-content .comics .btn:focus {
+  transform: scale(1.12);
+}
+
+footer {
+  background: #303030;
+}
+footer .main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+footer .main-footer .sign-up {
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: transparent;
+  border-color: #0082f9;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+footer .main-footer .sign-up:hover {
+  transform: scale(1.12);
+}
+footer .main-footer .socials {
+  display: flex;
+  align-items: center;
+}
+footer .main-footer .socials .ft-follow {
+  color: #0082f9;
+  margin-right: 1rem;
+}
+footer .main-footer .socials .footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer .main-footer .socials .footer-nav a {
+  display: inline-block;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+footer .main-footer .socials .footer-nav a:hover {
   transform: scale(1.12);
 }

@@ -1,11 +1,9 @@
-header {
+div.container {
     display: flex;
     align-items: center;
-
     .brand-logo {
         width: 100px;
     }
-
     .main-navigation {
         ul {
             display: flex;
