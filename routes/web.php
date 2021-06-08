@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// HOMEPAGE / COMICS
+Route::get('/comics', function () {
+
+    // GETTING DATA
+    $comics = config('dc-database');
+
+    return view('comics', ['comics' => $comics]);
+})->name('comics');
+
+// NEWS
+Route::get('/news', function () {
+    return view('news');
+})->name('news');

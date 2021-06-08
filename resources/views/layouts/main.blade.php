@@ -4,13 +4,27 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>@yield('head-title', 'DC COMICS')</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+
+        {{-- STYLE --}}
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         
     </head>
     <body>
         
+        {{-- HEADER --}}
+        @include('partials.header')
+
+        {{-- MAIN CONTENT --}}
+        <main>
+            @yield('content')
+        </main>
+
+        {{-- FOOTER --}}
+        @include('partials.footer')
+
     </body>
 </html>

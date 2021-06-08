@@ -1,0 +1,32 @@
+.main-content {
+    background: $bg-color;
+    color: $title-color;
+    padding-top: 2rem;
+    .comics {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .comic {
+            flex-basis: calc(100% / 6 - 2rem);
+            margin: 2rem 1rem;
+            .img-title {
+                margin-top: 1rem;
+                font-size: 12px;
+            }
+        }
+        .btn {
+            margin-bottom: 2rem;
+            padding: 10px 50px;
+            font-weight: 700;
+            color: $title-color;
+            background: $secondary-color;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s;
+            &:hover,
+            &:focus {
+                transform: scale(1.12);
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+header .brand-logo {
+  width: 100px;
+}
+header .main-navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+header .main-navigation a {
+  display: inline-block;
+  margin-left: 4rem;
+  padding: 3rem 0;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 4px solid transparent;
+}
+header .main-navigation a.active {
+  color: #097ceb;
+  border-color: #097ceb;
+}
+
+.main-content {
+  background: #1c1c1c;
+  color: #fff;
+  padding-top: 2rem;
+}
+.main-content .comics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main-content .comics .comic {
+  flex-basis: calc(100% / 6 - 2rem);
+  margin: 2rem 1rem;
+}
+.main-content .comics .comic .img-title {
+  margin-top: 1rem;
+  font-size: 12px;
+}
+.main-content .comics .btn {
+  margin-bottom: 2rem;
+  padding: 10px 50px;
+  font-weight: 700;
+  color: #fff;
+  background: #0082f9;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s;
+}
+.main-content .comics .btn:hover, .main-content .comics .btn:focus {
+  transform: scale(1.12);
+}
