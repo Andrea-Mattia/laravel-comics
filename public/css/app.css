@@ -101,6 +101,11 @@ div.container .main-navigation a.active {
   transform: scale(1.12);
 }
 
+.news {
+  margin-top: 2rem;
+  color: #fff;
+}
+
 footer {
   background: #303030;
 }
